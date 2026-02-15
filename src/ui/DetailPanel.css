@@ -1,0 +1,84 @@
+.happiness-detail-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 340px;
+  height: 100vh;
+  background: rgba(30,40,60,0.98);
+  color: #fff;
+  box-shadow: -4px 0 32px #0008;
+  z-index: 30;
+  padding: 36px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeInPanel 0.3s;
+}
+@keyframes fadeInPanel {
+  from { opacity: 0; right: -80px; }
+  to { opacity: 1; right: 0; }
+}
+.happiness-detail-panel h2 {
+  margin: 0 0 2px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.happiness-detail-panel .region {
+  color: #a0c4ff;
+  font-size: 1.1rem;
+}
+.happiness-detail-panel .score {
+  color: #ffe066;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.happiness-detail-panel .metrics {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.metric-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.98rem;
+}
+.metric-label {
+  width: 120px;
+  color: #bfc9d1;
+}
+.bar-bg {
+  flex: 1;
+  background: #2d3a4a;
+  border-radius: 6px;
+  height: 10px;
+  overflow: hidden;
+  margin-right: 6px;
+}
+.bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ffe066, #a0c4ff);
+  border-radius: 6px;
+}
+.metric-value {
+  width: 38px;
+  text-align: right;
+  color: #ffe066;
+}
+.close-btn {
+  margin-top: 18px;
+  background: #2d3a4a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.15s;
+}
+.close-btn:hover {
+  background: #3c3b6e;
+}

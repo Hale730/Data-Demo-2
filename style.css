@@ -1,0 +1,24 @@
+  margin: 0;
+  padding: 0;
+}
+  display: block;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1a2332;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #f5f6fa;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  box-shadow: 0 4px 32px #0008;
+  margin: 0 auto;
+  background: transparent;
+}
+::selection {
+  background: #ffe06644;
+}
